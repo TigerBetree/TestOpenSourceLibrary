@@ -49,7 +49,7 @@ public class MainActivity extends FragmentActivity {
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         initTabs();
-        initFragment();
+
         tabSwitch(TAB_FRAG_1);
     }
 
@@ -100,29 +100,6 @@ public class MainActivity extends FragmentActivity {
                 tabSwitch(TAB_FRAG_3);
             }
         });
-    }
-
-    private void initFragment() {
-//        try {
-//            FragmentManager fragmentManager = getSupportFragmentManager();
-//
-//            fragment1 = (Fragment1) fragmentManager.findFragmentByTag(Fragment1.class.getName());
-//            if (fragment1 == null) {
-//                fragment1 = new Fragment1();
-//            }
-//
-//            fragment2 = (Fragment2) fragmentManager.findFragmentByTag(Fragment2.class.getName());
-//            if (fragment2 == null) {
-//                fragment2 = new Fragment2();
-//            }
-//
-//            fragment3 = (Fragment3) fragmentManager.findFragmentByTag(Fragment3.class.getName());
-//            if (fragment3 == null) {
-//                fragment3 = new Fragment3();
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
     }
 
     private void tabSwitch(@ReqType int tabId) {
